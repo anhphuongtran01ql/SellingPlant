@@ -1,0 +1,46 @@
+.banner-wrapper {
+    width: 100%;
+}
+
+.container.banner-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.banner-container .content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    padding: 2rem;
+}
+
+.banner-container .content-container h1 {
+    font-size: 6rem;
+}
+
+.banner-container .content-container h1 span {
+    color: #567E32;
+}
+
+.banner-container .content-container p {
+    font-size: 2.7rem;
+    color: #403D38;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.banner-container .content-container a {
+    max-width: 294px;
+    margin-left: 8.9rem;
+    display: inline-flex;
+    height: 7.3rem;
+    padding: 2rem 3rem;
+    gap: 1rem;
+    border-radius: 5rem;
+    background-color: #297C35;
+    color: #FFF;
+    font-size: 2.7rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
