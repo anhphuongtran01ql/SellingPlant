@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    --background-color: #F4F3F3;
+    --primary-color: #567E32;
+    --secondary-color: rgba(192, 211, 196, 0.50);
+    --button-normal-color: #789D5C;
+    --button-hover-color: #567E32;
+    --menu-letter-color: #A1A39A;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Days One', sans-serif;
+    background-color: var(--background-color);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+    outline: none;
+}
+
+input {
+    line-height: normal;
+}
+
+label,
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1152px;
+    margin: 0 auto;
+}
