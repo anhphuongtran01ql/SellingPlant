@@ -1,4 +1,4 @@
-.container.footer-container {
+.footer-container {
     display: flex;
     flex-direction: column;
     padding: 4rem 0;
@@ -123,7 +123,6 @@
     font-size: 1.8rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    padding: 1rem;
 }
 
 .footer-container .footer-below {
@@ -131,7 +130,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 3rem;
-    border-top: 3px solid #fff;
+    border-top: 0.3rem solid #fff;
 }
 
 .footer-below p {
