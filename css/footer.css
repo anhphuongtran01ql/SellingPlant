@@ -1,0 +1,150 @@
+.container.footer-container {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+}
+
+.footer-container .footer-above {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+    padding-bottom: 3rem;
+}
+
+.footer-above .footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.footer-info .footer-logo-group {
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer-info p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.footer-info .footer-icon-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-icon-social .icon-social {
+    font-size: 3.7rem;
+    color: #fff;
+}
+
+.footer-above .footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.footer-contact h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    line-height: 4rem;
+}
+
+.footer-contact h3 span {
+    font-size: 1.7rem;
+}
+
+.footer-contact input {
+    border: none;
+    border-radius: 4rem;
+    padding: 2.6rem 2.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 2.5rem;
+    font-size: 2.5rem;
+    color: var(--placeholder-text-color);
+    font-family: 'Days One', sans-serif;
+}
+
+.footer-contact input::placeholder {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--placeholder-text-color);
+    font-family: 'Days One', sans-serif;
+}
+
+.footer-contact button {
+    width: 100%;
+    border-radius: 5rem;
+    border: none;
+    padding: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--button-color);
+    font-family: 'Days One', sans-serif;
+}
+
+.footer-contact button:hover {
+    background-color: #E7EDDD;
+}
+
+.footer-above .footer-menu-group {
+    display: flex;
+    gap: 2.7rem;
+}
+
+.footer-menu-group .footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.footer-menu h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.footer-menu .menu-item-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.menu-item-list li a {
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 1rem;
+}
+
+.footer-container .footer-below {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+    border-top: 3px solid #fff;
+}
+
+.footer-below p {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.footer-below .footer-icon-group {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-icon-group .icon-payment {
+    font-size: 4.5rem;
+    color: #fff;
+}

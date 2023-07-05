@@ -8,6 +8,8 @@
     --button-normal-color: #789D5C;
     --button-hover-color: #567E32;
     --menu-letter-color: #A1A39A;
+    --placeholder-text-color: #A5A5A5;
+    --button-color: #297C35;
 }
 
 * {
@@ -87,6 +89,11 @@ header {
 
 main {
     padding: 10rem 0;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--primary-color);
 }
 
 .section-title-wrapper {
