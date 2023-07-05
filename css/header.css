@@ -1,25 +1,29 @@
-.container.header-container {
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.header-container .logo-wrapper a {
+.logo-wrapper a {
     display: flex;
     align-items: center;
 }
 
-.header-container nav ul {
+.header-menu .menu-list {
     display: flex;
     flex-direction: row;
     list-style: none;
+    gap: 4rem;
 }
 
-.header-container nav ul li a {
+.menu-list li a {
     color: var(--menu-letter-color);
     font-size: 2rem;
-    gap: 2rem;
-    padding: 1.6rem 2rem;
+    text-align: center;
+}
+
+.menu-list li a:hover {
+    color: #5D5E5C;
 }
 
 .header-container .icon-wrapper {
