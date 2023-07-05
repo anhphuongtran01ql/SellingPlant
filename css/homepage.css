@@ -1,0 +1,119 @@
+/* section banner css */
+.banner {
+    width: 100%;
+}
+
+.container.banner-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 10rem;
+}
+
+.banner-container .content {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    padding: 2rem;
+}
+
+.banner-container .content h1 {
+    font-size: 6rem;
+}
+
+.banner-container .content h1 span {
+    font-size: 6rem;
+    color: #567E32;
+}
+
+.banner-container .content p {
+    font-size: 2.7rem;
+    color: #403D38;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.banner-container .content a {
+    max-width: 294px;
+    margin-left: 8.9rem;
+    display: inline-flex;
+    height: 7.3rem;
+    padding: 2rem 3rem;
+    gap: 1rem;
+    border-radius: 5rem;
+    background-color: var(--button-color);
+    color: #FFF;
+    font-size: 2.7rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+/* section plants css */
+.plants {
+    width: 100%;
+}
+
+.container.plants-container {
+    margin-bottom: 10rem;
+}
+
+.plants-container .plants-items-group {
+    display: flex;
+    gap: 2.4rem;
+    justify-content: space-between;
+    height: 465px;
+}
+
+.plants-items-group .plants-item {
+    height: 145px;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.plants-item .plants-item__overlay {
+    background-color: #D9D9D9;
+    width: 250px;
+    height: 145px;
+    position: relative;
+    border-radius: 2rem;
+    display: flex;
+}
+
+.plants-item .plants-item__overlay .text-group {
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 110px;
+    width: 100px;
+    ;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.plants-item .plants-item__overlay img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.text-group .icon-custom {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.text-group .name {
+    font-size: 1.5rem;
+    color: #000;
+    text-align: right;
+}
+
+.text-group .price {
+    font-size: 2rem;
+    color: #000;
+    text-align: right;
+}
