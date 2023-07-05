@@ -1,7 +1,7 @@
 /* section banner css */
 .banner-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
     margin-bottom: 10rem;
 }
@@ -15,6 +15,7 @@
 
 .content h1 {
     font-size: 6rem;
+    font-weight: 400;
 }
 
 .content h1 span {
