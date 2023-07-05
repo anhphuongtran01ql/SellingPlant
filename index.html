@@ -13,7 +13,7 @@
     <header>
       <div class="container header-container">
         <div class="logo-wrapper">
-          <a href="/">
+          <a title="homepage" href="/">
             <img
               width="90px"
               height="90px"
@@ -31,11 +31,11 @@
 
         <nav>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a title="homepage" href="/">Home</a></li>
+            <li><a title="about us" href="#">About us</a></li>
+            <li><a title="products" href="#">Products</a></li>
+            <li><a title="news" href="#">News</a></li>
+            <li><a title="contact us" href="#">Contact us</a></li>
           </ul>
         </nav>
 
@@ -56,9 +56,9 @@
       </div>
     </header>
     <main>
-      <section class="banner-wrapper">
+      <section class="banner">
         <div class="container banner-container">
-          <div class="content-container">
+          <div class="content">
             <h1>“Grow <span>plants</span> for <span>a better life</span>“</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -66,24 +66,24 @@
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <a href="#">Go to Shop page</a>
+            <a title="products" href="#">Go to Shop page</a>
           </div>
           <img
-            width="565px"
+            width="auto"
             height="610px"
-            src="./assets/imgs/background/no_image.jpg"
+            src="./assets/imgs/background/bg_banner.png"
             alt="Planttify - Selling plants"
           />
         </div>
       </section>
 
-      <section class="plants-wrapper">
+      <section class="plants">
         <div class="container plants-container">
-          <div class="section-title-container">
+          <div class="section-title-wrapper">
             <h2 class="section-title">BEST SELLING <span>PLANTS</span></h2>
           </div>
-          <ul class="plants-items">
-            <li class="plants-item">
+          <div class="plants-items-group">
+            <div class="plants-item">
               <div class="plants-item__overlay">
                 <img
                   width="140px"
@@ -97,8 +97,8 @@
                   <p class="price">$125</p>
                 </div>
               </div>
-            </li>
-            <li class="plants-item">
+            </div>
+            <div class="plants-item">
               <div class="plants-item__overlay">
                 <img
                   width="140px"
@@ -112,8 +112,8 @@
                   <p class="price">$25</p>
                 </div>
               </div>
-            </li>
-            <li class="plants-item">
+            </div>
+            <div class="plants-item">
               <div class="plants-item__overlay">
                 <img
                   width="140px"
@@ -127,8 +127,8 @@
                   <p class="price">$50</p>
                 </div>
               </div>
-            </li>
-            <li class="plants-item">
+            </div>
+            <div class="plants-item">
               <div class="plants-item__overlay">
                 <img
                   width="140px"
@@ -142,8 +142,8 @@
                   <p class="price">$18</p>
                 </div>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section class="feedbacks"></section>

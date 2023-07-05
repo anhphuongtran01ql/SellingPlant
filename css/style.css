@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Days+One&family=Montserrat&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
-* {
-    margin: 0;
-    padding: 0;
+:root {
     --background-color: #F4F3F3;
     --primary-color: #567E32;
     --secondary-color: rgba(192, 211, 196, 0.50);
@@ -12,17 +10,20 @@
     --menu-letter-color: #A1A39A;
 }
 
-html {
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
-    font-family: 'Days One', sans-serif;
-    background-color: var(--background-color);
 }
 
 body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    font-family: 'Days One', sans-serif;
+    background-color: var(--background-color);
+    padding-top: 0;
 }
 
 ::-webkit-scrollbar {
@@ -88,7 +89,7 @@ main {
     padding: 10rem 0;
 }
 
-.section-title-container {
+.section-title-wrapper {
     width: 100%;
     background-color: var(--secondary-color);
     padding: 3.1rem 0;
@@ -104,5 +105,6 @@ main {
 }
 
 .section-title span {
+    font-size: 5rem;
     color: #567E32;
 }
