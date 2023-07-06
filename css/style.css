@@ -10,6 +10,7 @@
     --button-color: #297C35;
     --heading-text-color: #403D38;
     --placeholder-text-color: #A5A5A5;
+    --star-color: #F1C644;
 }
 
 * {
@@ -42,7 +43,6 @@ body {
 ::-webkit-scrollbar-thumb {
     background-color: darkgrey;
     border-radius: 5px;
-
 }
 
 *,
