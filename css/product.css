@@ -9,14 +9,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 3rem;
 }
+
 
 .our-plant-container .plants-group,
 .other-products-container .plants-group {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5rem 2.4rem;
-    padding: 10rem 0;
+    padding: 10rem 0 7rem;
 }
 
 .plants-group .plants-item {
@@ -81,7 +83,7 @@
 }
 
 .plants-btn .btn-detail {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     background-color: #A5CA8A;
     color: #fff;
     font-size: 1rem;
@@ -133,14 +135,17 @@
     background-color: var(--primary-color);
 }
 
-.our-plant-container .btn-view-more,
-.other-products-container .btn-view-more {
+.btn-view-more {
     padding: 2rem 6.3rem;
     border-radius: 5rem;
-    background: var(--primary-color);
+    background-color: var(--button-normal-color);
     border: none;
     color: #fff;
     font-family: "Days One", sans-serif;
     font-size: 2rem;
     font-weight: 400;
+}
+
+.btn-view-more:hover {
+    background-color: var(--primary-color);
 }
