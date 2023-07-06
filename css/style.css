@@ -9,6 +9,7 @@
     --button-hover-color: #567E32;
     --menu-letter-color: #A1A39A;
     --button-home-color: #297C35;
+    --heading-text-color: #403D38;
 }
 
 * {
@@ -99,7 +100,7 @@ main {
 
 .section-title {
     font-size: 5rem;
-    color: #403D38;
+    color: var(--heading-text-color);
     text-align: center;
     font-weight: 400;
 
