@@ -2,9 +2,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10rem;
 }
 
-.our-plant-container .plants-group {
+.other-products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-plant-container .plants-group,
+.other-products-container .plants-group {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5rem 2.4rem;
@@ -125,7 +133,8 @@
     background-color: var(--primary-color);
 }
 
-.our-plant-container .btn-view-more {
+.our-plant-container .btn-view-more,
+.other-products-container .btn-view-more {
     padding: 2rem 6.3rem;
     border-radius: 5rem;
     background: var(--primary-color);
