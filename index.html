@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Planttify</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
@@ -41,21 +50,24 @@
         </nav>
 
         <div class="icon-wrapper">
-          <img
-            width="30px"
-            height="30px"
-            src="./assets/imgs/logo/icon_shop.png"
-            alt="Planttify - Selling plants"
-          />
-          <img
-            width="30px"
-            height="30px"
-            src="./assets/imgs/logo/icon_ava.png"
-            alt="Planttify - Selling plants"
-          />
+          <a title="Shop" href="#">
+            <img
+              width="30px"
+              height="30px"
+              src="./assets/imgs/logo/icon_shop.png"
+              alt="Planttify - Selling plants"
+          /></a>
+          <a title="User" href="#">
+            <img
+              width="30px"
+              height="30px"
+              src="./assets/imgs/logo/icon_ava.png"
+              alt="Planttify - Selling plants"
+          /></a>
         </div>
       </div>
     </header>
+
     <main>
       <section class="banner">
         <div class="container banner-container">
@@ -99,69 +111,189 @@
           </div>
           <div class="plants-group">
             <div class="plants-item">
-              <div class="plants-item__overlay">
+              <div class="plants-image">
                 <img
                   width="140px"
                   height="auto"
                   src="./assets/imgs/products/fav_plant_1.png"
                   alt="Planttify - Selling plants"
                 />
-                <div class="text-group">
-                  <i class="fas fa-heart icon-custom"></i>
-                  <p class="name">Guiana Chestnut</p>
-                  <p class="price">$125</p>
-                </div>
+              </div>
+              <div class="plants-item__overlay"></div>
+              <div class="text-group">
+                <i class="fas fa-heart icon-custom"></i>
+                <p class="name">Guiana Chestnut</p>
+                <p class="price">$125</p>
               </div>
             </div>
+
             <div class="plants-item">
-              <div class="plants-item__overlay">
+              <div class="plants-image">
                 <img
                   width="140px"
                   height="auto"
                   src="./assets/imgs/products/fav_plant_2.webp"
                   alt="Planttify - Selling plants"
                 />
-                <div class="text-group">
-                  <i class="fas fa-heart icon-custom"></i>
-                  <p class="name">Peperomia</p>
-                  <p class="price">$25</p>
-                </div>
+              </div>
+              <div class="plants-item__overlay"></div>
+              <div class="text-group">
+                <i class="fas fa-heart icon-custom"></i>
+                <p class="name">Peperomia</p>
+                <p class="price">$25</p>
               </div>
             </div>
+
             <div class="plants-item">
-              <div class="plants-item__overlay">
+              <div class="plants-image">
                 <img
                   width="140px"
                   height="auto"
                   src="./assets/imgs/products/fav_plant_3.png"
                   alt="Planttify - Selling plants"
                 />
-                <div class="text-group">
-                  <i class="fas fa-heart icon-custom"></i>
-                  <p class="name">Dracaena</p>
-                  <p class="price">$50</p>
-                </div>
+              </div>
+              <div class="plants-item__overlay"></div>
+              <div class="text-group">
+                <i class="fas fa-heart icon-custom"></i>
+                <p class="name">Dracaena</p>
+                <p class="price">$50</p>
               </div>
             </div>
+
             <div class="plants-item">
-              <div class="plants-item__overlay">
+              <div class="plants-image">
                 <img
                   width="140px"
                   height="auto"
                   src="./assets/imgs/products/fav_plant_4.png"
                   alt="Planttify - Selling plants"
                 />
-                <div class="text-group">
-                  <i class="fas fa-heart icon-custom"></i>
-                  <p class="name">Pothos</p>
-                  <p class="price">$18</p>
-                </div>
+              </div>
+              <div class="plants-item__overlay"></div>
+              <div class="text-group">
+                <i class="fas fa-heart icon-custom"></i>
+                <p class="name">Pothos</p>
+                <p class="price">$18</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="feedbacks"></section>
+
+      <section class="feedbacks">
+        <div class="container feedbacks-container">
+          <div class="feedbacks-left">
+            <h2 class="section-title heading-custom">
+              OUR<span> FEEDBACKS</span>
+            </h2>
+
+            <div class="feedbacks-list owl-carousel owl-theme">
+              <div class="feedback-item">
+                <div class="user-avatar">
+                  <img
+                    src="./assets/imgs/customers/customer_1.jpeg"
+                    alt="Planttify - Selling plants"
+                  />
+                </div>
+                <div class="user-info">
+                  <div class="star-rating">
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <p class="details">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.”
+                  </p>
+                  <strong class="author">B. Andrew</strong>
+                </div>
+              </div>
+
+              <div class="feedback-item">
+                <div class="user-avatar">
+                  <img
+                    src="./assets/imgs/customers/customer_2.jpeg"
+                    alt="Planttify - Selling plants"
+                  />
+                </div>
+                <div class="user-info">
+                  <div class="star-rating">
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <p class="details">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.”
+                  </p>
+                  <strong class="author">A. Roses </strong>
+                </div>
+              </div>
+
+              <div class="feedback-item">
+                <div class="user-avatar">
+                  <img
+                    src="./assets/imgs/customers/customer_3.jpeg"
+                    alt="Planttify - Selling plants"
+                  />
+                </div>
+                <div class="user-info">
+                  <div class="star-rating">
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <p class="details">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.”
+                  </p>
+                  <strong class="author">T. Thomas</strong>
+                </div>
+              </div>
+
+              <div class="feedback-item">
+                <div class="user-avatar">
+                  <img
+                    src="./assets/imgs/customers/customer_4.jpeg"
+                    alt="Planttify - Selling plants"
+                  />
+                </div>
+                <div class="user-info">
+                  <div class="star-rating">
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                  </div>
+                  <p class="details">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.”
+                  </p>
+                  <strong class="author">L. Anna</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedbacks-right"></div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container footer-container">
@@ -234,5 +366,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./javascript/slider.js"></script>
   </body>
 </html>

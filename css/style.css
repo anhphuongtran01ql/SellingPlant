@@ -6,10 +6,12 @@
     --primary-color: #567E32;
     --secondary-color: rgba(192, 211, 196, 0.50);
     --button-normal-color: #789D5C;
-    --button-hover-color: #567E32;
     --menu-letter-color: #A1A39A;
     --placeholder-text-color: #A5A5A5;
     --button-color: #297C35;
+    --button-home-color: #297C35;
+    --heading-text-color: #403D38;
+    --star-color: #F1C644;
 }
 
 * {
@@ -30,19 +32,18 @@ body {
 
 ::-webkit-scrollbar {
     width: 6px;
-    border-radius: 5px;
+    border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
+    border-radius: 0.5rem;
 
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: darkgrey;
-    border-radius: 5px;
-
+    border-radius: 0.5rem;
 }
 
 *,
@@ -105,7 +106,7 @@ footer {
 
 .section-title {
     font-size: 5rem;
-    color: #403D38;
+    color: var(--heading-text-color);
     text-align: center;
     font-weight: 400;
 

@@ -1,8 +1,7 @@
 /* section banner css */
 .banner-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin-bottom: 10rem;
 }
 
@@ -16,6 +15,7 @@
 .content h1 {
     font-size: 6rem;
     font-weight: 400;
+    color: var(--heading-text-color);
 }
 
 .content h1 span {
@@ -25,9 +25,9 @@
 
 .content p {
     font-size: 2.7rem;
-    color: #403D38;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    color: var(--heading-text-color);
 }
 
 .content a {
@@ -62,46 +62,53 @@
 }
 
 .plants-container .plants-group {
+    --f-columns: 4;
+    --f-gap: 2.4rem;
     display: flex;
-    gap: 2.4rem;
-    justify-content: space-between;
-    height: 465px;
+    margin-left: calc(-1 * var(--f-gap));
+    margin-bottom: calc(-1 * var(--f-gap));
+    flex-wrap: nowrap;
+}
+
+.plants-container .plants-group>* {
+    margin-left: var(--f-gap);
+    margin-bottom: var(--f-gap);
+    width: calc((100% / var(--f-columns) - var(--f-gap)));
+}
+
+.plants-group .plants-image {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
 }
 
 .plants-group .plants-item {
-    height: 145px;
-    bottom: 0;
-    display: flex;
-    align-items: flex-end;
-    height: 100%;
+    position: relative;
 }
 
 .plants-item .plants-item__overlay {
+    position: absolute;
+    z-index: -1;
     background-color: #D9D9D9;
-    width: 250px;
-    height: 145px;
-    position: relative;
     border-radius: 2rem;
-    display: flex;
+    width: 100%;
+    height: 45%;
+    bottom: 0;
 }
 
-.plants-item .plants-item__overlay .text-group {
+.plants-item .text-group {
     position: absolute;
+    z-index: 1;
+    width: 50%;
+    bottom: 0;
     right: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    height: 110px;
-    width: 100px;
-    top: 50%;
-    transform: translate(0%, -50%);
-}
-
-.plants-item .plants-item__overlay img {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    height: 45%;
+    padding: 1rem 0;
 }
 
 .text-group .icon-custom {
@@ -113,10 +120,132 @@
     font-size: 1.5rem;
     color: #000;
     text-align: right;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
 }
 
 .text-group .price {
     font-size: 2rem;
     color: #000;
     text-align: right;
+}
+
+/* section feedbacks css */
+.feedbacks-container {
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.4rem;
+}
+
+.feedbacks .feedbacks-left {
+    position: relative;
+    grid-column: 1/span 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.feedbacks-left .heading-custom {
+    padding-top: 5rem;
+}
+
+.feedbacks .feedbacks-right {
+    background: url("../assets/imgs/background/background_1.jpeg"), lightgray 50%/cover no-repeat;
+    height: 900px;
+}
+
+.feedbacks-left .feedbacks-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+    width: 70%;
+}
+
+.feedbacks-list .owl-stage-outer .owl-item.active {
+    display: flex;
+    justify-content: center;
+    overflow: unset;
+}
+
+.feedbacks-list .owl-stage-outer .owl-item:not(.active) {
+    visibility: hidden;
+    z-index: -1;
+}
+
+.feedbacks-list .owl-nav.disabled+.owl-dots {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedbacks-list .owl-nav.disabled+.owl-dots .owl-dot span {
+    width: 2rem;
+    height: 2rem;
+}
+
+.feedbacks-list .owl-nav.disabled+.owl-dots .owl-dot:not(.active) span {
+    background-color: rgba(86, 126, 50, 0.50);
+}
+
+.feedbacks-list .owl-nav.disabled+.owl-dots .owl-dot.active span {
+    background-color: var(--primary-color);
+}
+
+.feedbacks-list .feedback-item {
+    width: 100%;
+}
+
+.feedback-item .user-avatar {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 7rem;
+}
+
+.feedback-item .user-avatar img {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    width: 140px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.feedback-item .user-info {
+    background-color: var(--primary-color);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+    border-radius: 2rem;
+    margin-top: -7rem;
+    padding: 4rem;
+    gap: 3.2rem;
+    width: 100%;
+}
+
+.user-info .star-rating {
+    color: var(--star-color);
+}
+
+.user-info .star-rating i {
+    font-size: 3.6rem;
+}
+
+.user-info .details {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.user-info .author {
+    font-size: 3rem;
+    font-weight: 400;
 }
