@@ -132,3 +132,119 @@
     color: #000;
     text-align: right;
 }
+
+/* section feedbacks css */
+.feedbacks-container {
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.4rem;
+}
+
+.feedbacks .feedbacks-left {
+    position: relative;
+    grid-column: 1/span 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.feedbacks-left .heading-custom {
+    padding-top: 5rem;
+}
+
+.feedbacks .feedbacks-right {
+    background: url("../assets/imgs/background/background_1.jpeg"), lightgray 50%/cover no-repeat;
+    height: 900px;
+}
+
+.feedbacks-left .feedbacks-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+    width: 70%;
+}
+
+.feedbacks-list .owl-stage-outer .owl-item.active {
+    display: flex;
+    justify-content: center;
+    overflow: unset;
+}
+
+.feedbacks-list .owl-stage-outer .owl-item:not(.active) {
+    visibility: hidden;
+    z-index: -1;
+}
+
+.feedbacks-list .owl-nav.disabled+.owl-dots {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedbacks-list .owl-nav.disabled+.owl-dots .owl-dot span {
+    width: 2rem;
+    height: 2rem;
+}
+
+.feedbacks-list .owl-nav.disabled+.owl-dots .owl-dot:not(.active) span {
+    background-color: rgba(86, 126, 50, 0.50);
+}
+
+.feedbacks-list .owl-nav.disabled+.owl-dots .owl-dot.active span {
+    background-color: var(--primary-color);
+}
+
+.feedbacks-list .feedback-item {
+    width: 100%;
+}
+
+.feedback-item .user-avatar {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 7rem;
+}
+
+.feedback-item .user-avatar img {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    width: 140px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.feedback-item .user-info {
+    background-color: var(--primary-color);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+    border-radius: 2rem;
+    margin-top: -7rem;
+    padding: 4rem;
+    gap: 3.2rem;
+    width: 100%;
+}
+
+.user-info .star-rating {
+    color: var(--star-color);
+}
+
+.user-info .star-rating i {
+    font-size: 3.6rem;
+}
+
+.user-info .details {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.user-info .author {
+    font-size: 3rem;
+    font-weight: 400;
+}
