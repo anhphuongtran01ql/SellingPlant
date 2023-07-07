@@ -195,7 +195,7 @@
 }
 
 .plants-btn .btn-detail:hover {
-    background-color: #7DAD76;
+    background-color: var(--input-color);
 }
 
 .btn-detail:hover .icon-close {

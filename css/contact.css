@@ -1,0 +1,135 @@
+.contact-form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.01rem;
+    aspect-ratio: 2/1;
+}
+
+.contact-form-container .contact-left {
+    height: 100%;
+    position: relative;
+}
+
+.contact-left .left-image {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.left-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contact-left .contact-info-group {
+    width: 60%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 6rem;
+}
+
+.contact-info-group .text-above {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.contact-info-group h1 {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.contact-info-group .text-below {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.contact-form-container .contact-right {
+    background-color: #DAE3DB;
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 0.2rem solid var(--button-color);
+}
+
+.contact-right .contact-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.contact-form-group .input-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.input-group input {
+    width: 50%;
+}
+
+.contact-form-group textarea {
+    width: 100%;
+}
+
+.input-group input,
+.contact-form-group textarea {
+    padding: 1.2rem 1rem 1.2rem 2rem;
+    color: var(--input-text-color);
+    font-family: "Days One", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    background: linear-gradient(var(--input-color), var(--input-color)) padding-box,
+        linear-gradient(180deg, #fff, var(--button-color)) border-box;
+    border: 0.3rem solid transparent;
+    border-radius: 1.5rem;
+}
+
+.input-group input:hover,
+.contact-form-group textarea:hover {
+    background: linear-gradient(var(--background-color), var(--background-color)) padding-box,
+        linear-gradient(180deg, #A5CA8A, var(--button-color)) border-box;
+}
+
+.input-group input::placeholder,
+.contact-form-group textarea::placeholder {
+    color: var(--input-text-color);
+}
+
+.input-group input:hover::placeholder,
+.contact-form-group textarea:hover::placeholder {
+    color: var(--button-color);
+}
+
+.contact-right .btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 3rem;
+}
+
+.btn-wrapper .btn-submit-form {
+    padding: 1rem 6rem;
+    color: var(--button-color);
+    font-family: "Days One", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    background: linear-gradient(#DAE3DB, #DAE3DB) padding-box,
+        linear-gradient(-90deg, #E7EDDD, var(--button-color)) border-box;
+    border: 0.3rem solid transparent;
+    border-radius: 1.5rem;
+}
+
+.btn-wrapper .btn-submit-form:hover {
+    transition: 0.6;
+    background: linear-gradient(#E7EDDD, #E7EDDD) padding-box,
+        linear-gradient(90deg, #E7EDDD, var(--button-color)) border-box;
+}
