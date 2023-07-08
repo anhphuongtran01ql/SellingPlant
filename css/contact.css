@@ -16,6 +16,14 @@
     aspect-ratio: 1/1;
 }
 
+.left-image .contact-slider {
+    display: none;
+}
+
+.left-image .active {
+    display: block;
+}
+
 .left-image img {
     height: 100%;
     width: 100%;
