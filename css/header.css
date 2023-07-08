@@ -1,0 +1,32 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-wrapper a {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu .menu-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 4rem;
+}
+
+.menu-list li a {
+    color: var(--menu-letter-color);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.menu-list li a:hover {
+    color: #5D5E5C;
+}
+
+.header-container .icon-wrapper {
+    display: flex;
+    gap: 3.4rem;
+}
