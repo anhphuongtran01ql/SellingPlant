@@ -5,13 +5,13 @@ $(document).ready(function () {
   var logo = document.querySelector(".logo-wrapper");
   var btn_open_menu = document.getElementById("btn-mobile");
   var btn_close_menu = document.getElementById("btn-close");
-  
+
   btn_open_menu.onclick = function () {
     toggleMenu();
     header_tag.classList.toggle("header-mobile");
     header_container.classList.remove("header-container-mobile-close");
     header_container.classList.toggle("header-container-mobile-menu");
-    logo.classList.toggle("logo-wrapper-none");
+    logo.classList.toggle("mobile-none");
 
     btn_open_menu.style.display = "none";
     btn_close_menu.classList.toggle("active");
@@ -22,7 +22,7 @@ $(document).ready(function () {
     header_tag.classList.toggle("header-mobile");
     header_container.classList.remove("header-container-mobile-menu");
     header_container.classList.toggle("header-container-mobile-close");
-    logo.classList.remove("logo-wrapper-none");
+    logo.classList.remove("mobile-none");
 
     btn_open_menu.style.display = "flex";
     btn_close_menu.classList.remove("active");

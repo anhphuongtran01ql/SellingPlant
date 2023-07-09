@@ -127,6 +127,10 @@ footer {
     main {
         padding: 5rem 0;
     }
+
+    .mobile-none {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1152px) {
