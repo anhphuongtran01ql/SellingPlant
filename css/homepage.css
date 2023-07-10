@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 10rem;
+    padding-top: 9rem;
 }
 
 .banner-container .content {
@@ -106,8 +107,6 @@
     .content a {
         display: none;
     }
-
-
 }
 
 /* section plants css */
@@ -149,6 +148,37 @@
     width: 100%;
     height: 45%;
     bottom: 0;
+    transition: all 0.25s linear;
+}
+
+.plants-item button {
+    position: absolute;
+    bottom: -100%;
+    transition: all 0.25s linear;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+    background-color: #fff;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    border-radius: 1.5rem;
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+}
+
+.plants-item button {
+    position: absolute;
+    bottom: -100%;
+    transition: all 0.25s linear;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+    background-color: #fff;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    border-radius: 1.5rem;
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
 }
 
 .plants-item .text-group {
@@ -163,6 +193,8 @@
     align-items: flex-end;
     height: 45%;
     padding: 1rem 0;
+    overflow: hidden;
+    transition: all 0.25s linear;
 }
 
 .text-group .icon-custom {
@@ -185,6 +217,34 @@
 .text-group .price {
     font-size: 2rem;
     color: #000;
+    text-align: right;
+}
+
+.plants-item:hover button {
+    bottom: 1rem;
+}
+
+.plants-item:hover .plants-item__overlay {
+    background-color: #537E2E;
+    height: 50%;
+    transform: scale(1.1);
+}
+
+.plants-item:hover .text-group {
+    padding-bottom: 5rem;
+    height: 50%;
+    right: 0;
+    color: #fff;
+}
+
+.plants-item:hover .text-group .name {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.plants-item:hover .text-group .price {
+    font-size: 2rem;
+    color: #fff;
     text-align: right;
 }
 
