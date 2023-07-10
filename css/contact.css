@@ -1,3 +1,4 @@
+/* css form contact */
 .contact-form-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -13,6 +14,14 @@
 .contact-left .left-image {
     width: 100%;
     aspect-ratio: 1/1;
+}
+
+.left-image .contact-slider {
+    display: none;
+}
+
+.left-image .active {
+    display: block;
 }
 
 .left-image img {
@@ -132,4 +141,96 @@
     transition: 0.6;
     background: linear-gradient(#E7EDDD, #E7EDDD) padding-box,
         linear-gradient(90deg, #E7EDDD, var(--button-color)) border-box;
+}
+
+/* css section contact method */
+.contact-method-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding: 10rem 0;
+}
+
+.contact-method-container .method-group {
+    position: relative;
+}
+
+.contact-method-container .method-image-1 {
+    background: url('../assets/imgs/contact_us/contact_widget_2.jpeg'), lightgray 50% / cover no-repeat;
+}
+
+.contact-method-container .method-image-2 {
+    background: url('../assets/imgs/contact_us/contact_widget_3.jpeg'), lightgray 50% / cover no-repeat;
+}
+
+.contact-method-container .method-image-3 {
+    background: url('../assets/imgs/contact_us/contact_widget_1.jpeg'), lightgray 50% / cover no-repeat;
+}
+
+.method-group .method-item {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.6;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.method-group .border-above {
+    border-top: 0.4rem solid var(--button-color);
+}
+
+.method-group .border-below {
+    border-bottom: 0.4rem solid var(--button-color);
+}
+
+.method-info {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 3rem 3rem 3rem;
+}
+
+.method-info .method-icon-custom {
+    font-size: 6rem;
+    color: rgba(64, 61, 56, 0.5);
+}
+
+.method-info h3 {
+    font-size: 2rem;
+    color: #403D38;
+    font-weight: 400;
+}
+
+.method-info p {
+    color: #AC7313;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* css section map */
+.map-container .mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 445px;
+}
+
+.map-container .gmap_canvas {
+    overflow: hidden;
+    background: none;
+    width: 100%;
+    height: 445px;
+    border-radius: 2rem;
+}
+
+.map-container .gmap_iframe {
+    width: 100%;
+    height: 445px;
 }

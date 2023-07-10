@@ -1,0 +1,124 @@
+.about-container {
+    position: relative;
+    width: 100%;
+    height: 662px;
+}
+
+.about-container .border-white {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 5.5%;
+    bottom: 6.5%;
+    z-index: 1;
+    border: 0.3rem solid #fff;
+}
+
+.about-container .border-black {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 5.5%;
+    left: 6.5%;
+    z-index: 1;
+    border: 0.3rem solid #000;
+}
+
+.about-container img {
+    z-index: 0;
+    position: absolute;
+}
+
+.about-container .image-top-left {
+    left: 0;
+    top: 0;
+    aspect-ratio: 1/1;
+    width: 30%;
+}
+
+.about-container .image-bottom-left {
+    left: 6.5%;
+    bottom: 0;
+    z-index: 2;
+    height: auto;
+    width: 33%;
+}
+
+
+.about-container .image-bottom-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    aspect-ratio: 1/1;
+    width: 30%;
+}
+
+.about-container .text-group {
+    position: absolute;
+    top: 15%;
+    left: 6.5%;
+    margin-right: 5.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    z-index: -1;
+}
+
+.text-group .title-wrapper {
+    text-align: center;
+    background-color: #e7eddd;
+    padding-block: 1.5rem;
+}
+
+.text-group .title-wrapper h1 {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    font-size: 7rem;
+    letter-spacing: 1.4rem;
+}
+
+.text-group .content-wrapper {
+    background-color: #e9e9e9;
+    padding-block: 3.5rem;
+    padding-inline: 22%;
+}
+
+.content-wrapper p {
+    color: var(--button-color);
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-container {
+        height: 410px;
+    }
+
+    .about-container .border-white {
+        border-width: 0.2rem;
+    }
+
+    .about-container .border-black {
+        border-width: 0.2rem;
+    }
+
+    .about-container .image-bottom-left {
+        width: 25%;
+    }
+
+    .text-group .content-wrapper {
+        font-size: 1.3rem;
+    }
+
+    .text-group .title-wrapper h1 {
+        font-size: 4rem;
+        letter-spacing: 0.8rem;
+    }
+
+
+    .content-wrapper p {
+        font-size: 1rem;
+    }
+}

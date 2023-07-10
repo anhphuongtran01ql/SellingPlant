@@ -3,15 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact us</title>
-    <link rel="icon" href="../assets/imgs/logo/logo.png" />
+    <title>Planttify</title>
+    <link rel="icon" href="./assets/imgs/logo/logo.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
 
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/contact.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../javascript/contact_slider.js"></script>
+    <link rel="stylesheet" href="../css/about.css" />
   </head>
   <body>
     <header>
@@ -37,9 +44,13 @@
           <ul class="menu-list">
             <li><a title="homepage" href="/">Home</a></li>
             <li><a title="about us" href="./about.html">About us</a></li>
-            <li><a title="products" href="./product.html">Products</a></li>
+            <li>
+              <a title="products" href="./product.html">Products</a>
+            </li>
             <li><a title="news" href="./news.html">News</a></li>
-            <li><a title="contact us" href="./contact.html">Contact us</a></li>
+            <li>
+              <a title="contact us" href="./contact.html">Contact us</a>
+            </li>
           </ul>
         </nav>
 
@@ -63,140 +74,44 @@
     </header>
 
     <main>
-      <section class="contact-form">
-        <div class="container contact-form-container">
-          <div class="contact-left">
-            <div class="left-image">
-              <img
-                class="contact-slider active"
-                src="../assets/imgs/background/background.jpeg"
-                alt="Planttify - Selling plants"
-              />
-              <img
-                class="contact-slider"
-                src="../assets/imgs/background/background_1.jpeg"
-                alt="Planttify - Selling plants"
-              />
-              <img
-                class="contact-slider"
-                src="../assets/imgs/background/background_2.png"
-                alt="Planttify - Selling plants"
-              />
+      <section class="about-us">
+        <div class="container about-container">
+          <div class="border-black"></div>
+          <img
+            class="image-bottom-right"
+            src="../assets/imgs/about/about_right.png"
+            alt="Planttify - Selling plants"
+          />
+          <div class="border-white"></div>
+          <img
+            class="image-top-left"
+            src="../assets/imgs/about/about_left.png"
+            alt="Planttify - Selling plants"
+          />
+          <img
+            class="image-bottom-left"
+            src="../assets/imgs/about/about.png"
+            alt="Planttify - Selling plants"
+          />
+          <div class="text-group">
+            <div class="title-wrapper">
+              <h1 class="">About Us</h1>
             </div>
-
-            <div class="contact-info-group">
-              <p class="text-above">Send us a message</p>
-              <h1>CONTACT US</h1>
-              <p class="text-below">
+            <div class="content-wrapper">
+              <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
-            </div>
-          </div>
-          <div class="contact-right">
-            <form>
-              <div class="contact-form-group">
-                <div class="input-group">
-                  <input
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    placeholder="First name"
-                  />
-                  <input
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    placeholder="Last name"
-                  />
-                </div>
-                <div class="input-group">
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Email"
-                  />
-                  <input
-                    type="tel"
-                    id="phoneNumber"
-                    name="phoneNumber"
-                    placeholder="Phone number"
-                  />
-                </div>
-                <textarea
-                  id="content"
-                  name="content"
-                  rows="7"
-                  placeholder="Content"
-                ></textarea>
-              </div>
-              <div class="btn-wrapper">
-                <button class="btn-submit-form" type="submit">Submit</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact-method">
-        <div class="container contact-method-container">
-          <div class="method-group">
-            <div class="method-item method-image-1 border-below"></div>
-            <div class="method-info">
-              <i class="far fa-envelope method-icon-custom"></i>
-              <h3>Email</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-          <div class="method-group">
-            <div class="method-item method-image-2 border-above"></div>
-            <div class="method-info">
-              <i class="fas fa-phone-alt method-icon-custom"></i>
-              <h3>Phone</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-          <div class="method-group">
-            <div class="method-item method-image-3 border-below"></div>
-            <div class="method-info">
-              <i class="fas fa-store method-icon-custom"></i>
-              <h3>Store</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="map">
-        <div class="container map-container">
-          <div class="mapouter">
-            <div class="gmap_canvas">
-              <iframe
-                class="gmap_iframe"
-                frameborder="0"
-                scrolling="no"
-                marginheight="0"
-                marginwidth="0"
-                src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University of California Irvine&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              ></iframe>
             </div>
           </div>
         </div>
       </section>
     </main>
-
     <footer>
       <div class="container footer-container">
         <div class="footer-above">
