@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Delius&family=Great+Vibes&family=Lato&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Delius&family=Great+Vibes&family=Lato&family=Montserrat&family=David+Libre&family=Alice&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
 :root {
@@ -13,6 +13,7 @@
     --star-color: #F1C644;
     --input-text-color: #D9D9D9;
     --input-color: #7DAD76;
+    --news-color: #E7EDDD;
 }
 
 * {
@@ -87,6 +88,8 @@ header {
     width: 100%;
     background-color: #E9E9E9;
     box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);
+    position: fixed;
+    z-index: 999;
 }
 
 main {
