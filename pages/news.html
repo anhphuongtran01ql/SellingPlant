@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/news.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../javascript/news_slider.js"></script>
+    <script src="../javascript/btn-menu.js"></script>
   </head>
   <body>
     <header>
@@ -19,15 +20,8 @@
         <div class="logo-wrapper">
           <a title="Planttify" href="/">
             <img
-              width="90px"
               height="90px"
               src="../assets/imgs/logo/logo.png"
-              alt="Planttify - Selling plants"
-            />
-            <img
-              width="120px"
-              height="50px"
-              src="../assets/imgs/logo/logo-name.png"
               alt="Planttify - Selling plants"
             />
           </a>
@@ -40,7 +34,16 @@
             <li><a title="products" href="./product.html">Products</a></li>
             <li><a title="news" href="./news.html">News</a></li>
             <li><a title="contact us" href="./contact.html">Contact us</a></li>
+            <li class="menu-item-mobile">
+              <a title="cart" href="#">My cart</a>
+            </li>
+            <li class="menu-item-mobile">
+              <a title="account" href="#">My account</a>
+            </li>
           </ul>
+          <div id="btn-close" onclick="closeMenu()">
+            <span class="material-symbols-outlined icon-menu"> close </span>
+          </div>
         </nav>
 
         <div class="icon-wrapper">
@@ -58,6 +61,10 @@
               src="../assets/imgs/logo/icon_ava.png"
               alt="Planttify - Selling plants"
           /></a>
+        </div>
+
+        <div id="btn-mobile" onclick="toggleMenu()">
+          <span class="material-symbols-outlined icon-menu"> menu </span>
         </div>
       </div>
     </header>
@@ -219,13 +226,8 @@
           <div class="footer-info">
             <div class="footer-logo-group">
               <img
-                width="111px"
+                height="90px"
                 src="../assets/imgs/logo/logo.png"
-                alt="Planttify - Selling plants"
-              />
-              <img
-                width="165px"
-                src="../assets/imgs/logo/logo-name.png"
                 alt="Planttify - Selling plants"
               />
             </div>
