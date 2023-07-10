@@ -120,3 +120,94 @@ footer {
     font-size: 5rem;
     color: #567E32;
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        background-color: var(--button-normal-color);
+        box-shadow: none;
+    }
+
+    main {
+        padding: 5rem 0;
+    }
+
+    .mobile-none {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1152px) {
+    .container {
+        max-width: 100%;
+        margin: 0 4rem;
+    }
+
+    .section-title-wrapper {
+        padding: 2.5rem 3rem;
+    }
+
+    .section-title {
+        font-size: 4rem;
+    }
+
+    .section-title span {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width:768px) {
+    .container {
+        max-width: 100%;
+        margin: 0 4rem;
+    }
+
+    .section-title-wrapper {
+        padding: 1.5rem 2rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .section-title span {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 355px) and (max-width:576px) {
+    .container {
+        max-width: 100%;
+        margin: 0 4rem;
+    }
+
+    .section-title-wrapper {
+        padding: 1.5rem 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-title span {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 354px) {
+    .container {
+        max-width: 100%;
+        margin: 0 3rem;
+    }
+
+    .section-title-wrapper {
+        padding: 1rem 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1rem;
+    }
+
+    .section-title span {
+        font-size: 1rem;
+    }
+}
