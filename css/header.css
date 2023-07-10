@@ -50,8 +50,8 @@
 @media screen and (max-width: 768px) {
     .header-mobile {
         background-color: var(--button-color);
-        position: absolute;
-        z-index: 1;
+        position: fixed;
+        z-index: 999;
     }
 
     .header-container-mobile-menu {

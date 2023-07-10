@@ -87,6 +87,8 @@ header {
     width: 100%;
     background-color: #E9E9E9;
     box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);
+    position: fixed;
+    z-index: 999;
 }
 
 main {
