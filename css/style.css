@@ -74,12 +74,13 @@ a {
 }
 
 img {
-    display: block;
+    display: inline-block;
     max-width: 100%;
 }
 
 .container {
     max-width: 1152px;
+    
     margin: 0 auto;
 }
 
@@ -87,17 +88,21 @@ header {
     width: 100%;
     background-color: #E9E9E9;
     box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);
-    position: fixed;
+    position: sticky;
+    top:0;
     z-index: 999;
 }
 
-main {
-    padding: 10rem 0;
-}
 
 footer {
     width: 100%;
     background-color: var(--primary-color);
+}
+
+header,
+main,
+footer {
+    padding: 0 2.4rem;
 }
 
 .section-title-wrapper {
@@ -125,58 +130,19 @@ footer {
         background-color: var(--button-normal-color);
         box-shadow: none;
     }
-
-    main {
-        padding: 5rem 0;
-    }
-
-    .mobile-none {
-        display: none;
+    header,
+    main,
+    footer {
+        padding: 0;
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1152px) {
+
+
+@media screen and (max-width:767px) {
     .container {
         max-width: 100%;
-        margin: 0 4rem;
-    }
-
-    .section-title-wrapper {
-        padding: 2.5rem 3rem;
-    }
-
-    .section-title {
-        font-size: 4rem;
-    }
-
-    .section-title span {
-        font-size: 4rem;
-    }
-}
-
-@media screen and (min-width: 577px) and (max-width:768px) {
-    .container {
-        max-width: 100%;
-        margin: 0 4rem;
-    }
-
-    .section-title-wrapper {
-        padding: 1.5rem 2rem;
-    }
-
-    .section-title {
-        font-size: 3rem;
-    }
-
-    .section-title span {
-        font-size: 3rem;
-    }
-}
-
-@media screen and (min-width: 355px) and (max-width:576px) {
-    .container {
-        max-width: 100%;
-        margin: 0 4rem;
+        margin: 0 2.4rem;
     }
 
     .section-title-wrapper {
@@ -192,21 +158,15 @@ footer {
     }
 }
 
-@media screen and (max-width: 354px) {
-    .container {
-        max-width: 100%;
-        margin: 0 3rem;
-    }
 
-    .section-title-wrapper {
-        padding: 1rem 1.5rem;
-    }
+.flex {
+    display: flex;
+}
 
-    .section-title {
-        font-size: 1rem;
-    }
+.item-center {
+    align-items: center;
+}
 
-    .section-title span {
-        font-size: 1rem;
-    }
+.justify-center {
+    justify-content: center;
 }

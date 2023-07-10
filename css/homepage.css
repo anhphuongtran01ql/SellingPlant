@@ -1,21 +1,22 @@
 /* section banner css */
 .banner-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 10rem;
+    display: flex;
+    padding-top: 8.7rem;
+    padding-bottom: 10rem;
 }
 
 .banner-container .content {
+    flex:1;
     display: flex;
     flex-direction: column;
-    gap: 8rem;
-    padding: 2rem;
+    margin-top: 2.7rem;
 }
 
 .content h1 {
     font-size: 6rem;
     font-weight: 400;
     color: var(--heading-text-color);
+    margin-bottom: 6.3rem;
 }
 
 .content h1 span {
@@ -29,6 +30,11 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: var(--heading-text-color);
+    
+}
+
+.button-banner {
+    margin-top: 6.5rem;
 }
 
 .content a {
@@ -59,54 +65,32 @@
 
 /* responsive section banner */
 @media screen and (max-width: 768px) {
+
     .banner-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin-bottom: 10rem;
+        padding: 2.4rem 0 4rem;
+        flex-flow: column;
     }
-
-    .banner-container .content {
-        grid-row: 2;
-    }
-
     .banner-container .banner-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 9rem 5rem 0;
+        order: 1;
+        text-align: center;
+        margin-bottom: 2.4rem;
     }
-
-    .banner-image img {
-        grid-row: 1;
-        display: flex;
-        justify-content: center;
-        width: 400px;
-    }
-
     .banner-container .content {
-        gap: 6rem;
-        padding: 4rem 6rem 0;
+        order: 2;
     }
 
-    .content h1 {
+    .content h1,
+    .content h1 span {
         font-size: 4.5rem;
+        line-height: 5.7rem;
+        margin-bottom: 2.6rem;
         text-align: center;
     }
 
-    .content h1 span {
-        font-size: 4.5rem;
+    .button-banner {
+       display: none;
     }
-
-    .content p {
-        font-size: 2.1rem;
-        font-weight: 400;
-    }
-
-
-    .content a {
-        display: none;
-    }
-
+    
 
 }
 
