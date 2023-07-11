@@ -88,6 +88,7 @@
     text-align: center;
     color: var(--button-color);
     font-family: 'Days One', sans-serif;
+    background-color: #fff;
 }
 
 .footer-contact button:hover {
@@ -123,6 +124,7 @@
     font-size: 1.8rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    text-transform: capitalize;
 }
 
 .footer-container .footer-below {
