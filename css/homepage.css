@@ -174,9 +174,12 @@
     bottom: 1rem;
 }
 
+.plants-item .plants-image img {
+    transition: all 0.25s linear;
+}
+
 .plants-item:hover .plants-image img {
-    transform: scale(1.1) translateY(-2vw);
-    transition: all 0.2s ease-in-out;
+    transform: scale(1.1) translateY(-0.5vw);
 }
 
 .plants-item:hover .plants-item__overlay {

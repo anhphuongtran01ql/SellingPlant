@@ -246,3 +246,25 @@
 .btn-view-more:hover {
     background-color: var(--primary-color);
 }
+
+@media screen and (min-width: 769px) and (max-width: 1152px) {
+
+    .our-plant-container .plants-group,
+    .other-products-container .plants-group {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* gap: 5rem 2.4rem; */
+        /* padding: 10rem 0 7rem; */
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .our-plant-container .plants-group,
+    .other-products-container .plants-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* gap: 5rem 2.4rem; */
+        /* padding: 10rem 0 7rem; */
+    }
+}
