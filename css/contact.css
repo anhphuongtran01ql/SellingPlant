@@ -1,4 +1,8 @@
 /* css form contact */
+.contact-form {
+    padding-top: 4rem;
+}
+
 .contact-form-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

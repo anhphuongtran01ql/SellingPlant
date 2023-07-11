@@ -114,20 +114,30 @@
     margin-bottom: 10rem;
 }
 
-.plants-container .plants-group {
+.plants-group {
     --f-columns: 4;
     --f-gap: 2.4rem;
     display: flex;
+    flex-wrap: wrap;
     margin-left: calc(-1 * var(--f-gap));
     margin-bottom: calc(-1 * var(--f-gap));
-    flex-wrap: nowrap;
 }
 
-.plants-container .plants-group>* {
+.plants-group>* {
     margin-left: var(--f-gap);
     margin-bottom: var(--f-gap);
     width: calc((100% / var(--f-columns) - var(--f-gap)));
+    aspect-ratio: 3/4;
 }
+
+@media screen and (max-width: 768px) {
+    .plants-group {
+        --f-columns: 3;
+        --f-gap: 20px;
+    }
+}
+
+
 
 .plants-group .plants-image {
     height: 100%;
@@ -227,13 +237,11 @@
 .plants-item:hover .plants-item__overlay {
     background-color: #537E2E;
     height: 50%;
-    transform: scale(1.1);
 }
 
 .plants-item:hover .text-group {
     padding-bottom: 5rem;
     height: 50%;
-    right: 0;
     color: #fff;
 }
 
