@@ -255,7 +255,7 @@
     }
 
     .plants-item .plant-image {
-        padding: 1rem;
+        padding: 1rem 0;
     }
 
     .our-plant-container {
@@ -303,6 +303,10 @@
 
     .banner-left .banner-left-image {
         width: 129px;
+    }
+
+    .banner-right .banner-right-image {
+        height: calc(100% + 1.5rem);
     }
 }
 

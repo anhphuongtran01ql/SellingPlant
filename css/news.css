@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 2.4rem;
+    margin-top: 2rem;
 }
 
 .title-section .title-area {
@@ -234,15 +235,15 @@
     background-color: #e9e9e9;
     flex-direction: column;
     gap: 2rem;
-    /* margin-top: -380px; */
-    padding: 1.7rem 2.5rem;
+    margin-top: -270px;
+    padding: 0 1.7rem 2.5rem;
 }
 
 .section-right .image-section {
     height: 100%;
     display: flex;
     align-items: center;
-    position: relative;
+    justify-content: center;
     margin-top: 10rem;
     margin-inline: 10%;
 }
@@ -339,6 +340,7 @@
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: 2vw;
+        padding-top: 6rem;
     }
 
     .title-section .title-area {
