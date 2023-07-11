@@ -371,3 +371,9 @@
     font-size: 3rem;
     font-weight: 400;
 }
+
+@media screen and (max-width: 768px) {
+    .banner-container {
+        padding-top: 0;
+    }
+}
