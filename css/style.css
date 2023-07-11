@@ -139,11 +139,6 @@ footer {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1152px) {
-    .container {
-        max-width: 100%;
-        margin: 0 4rem;
-    }
-
     .section-title-wrapper {
         padding: 2.5rem 3rem;
     }
@@ -158,11 +153,6 @@ footer {
 }
 
 @media screen and (min-width: 577px) and (max-width:768px) {
-    .container {
-        max-width: 100%;
-        margin: 0 4rem;
-    }
-
     .section-title-wrapper {
         padding: 1.5rem 2rem;
     }
@@ -177,11 +167,6 @@ footer {
 }
 
 @media screen and (min-width: 355px) and (max-width:576px) {
-    .container {
-        max-width: 100%;
-        margin: 0 4rem;
-    }
-
     .section-title-wrapper {
         padding: 1.5rem 2rem;
     }
@@ -196,11 +181,6 @@ footer {
 }
 
 @media screen and (max-width: 354px) {
-    .container {
-        max-width: 100%;
-        margin: 0 3rem;
-    }
-
     .section-title-wrapper {
         padding: 1rem 1.5rem;
     }
