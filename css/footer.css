@@ -1,7 +1,6 @@
 .footer-container {
     display: flex;
     flex-direction: column;
-    padding: 4rem 0;
 }
 
 .footer-container .footer-above {
@@ -116,7 +115,7 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .menu-item-list li a {
@@ -152,14 +151,14 @@
 @media screen and (min-width: 678px) and (max-width: 992px) {
     .footer-container .footer-above {
         grid-template-columns: repeat(1, 1fr);
-        gap: 6rem;
-        padding-bottom: 5rem;
+        gap: 4rem;
+        padding-bottom: 4rem;
     }
 
     .footer-above .footer-info {
         gap: 2rem;
         border-bottom: 0.3rem solid #fff;
-        padding-bottom: 2rem;
+        padding-bottom: 3rem;
     }
 
     .footer-info .footer-icon-social {
@@ -170,6 +169,8 @@
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: 2rem;
+        border-bottom: 0.3rem solid #fff;
+        padding-bottom: 4rem;
     }
 
     .footer-contact h3 {
@@ -233,8 +234,14 @@
 @media screen and (max-width: 677px) {
     .footer-container .footer-above {
         grid-template-columns: repeat(1, 1fr);
-        gap: 6rem;
+        gap: 3rem;
         padding-bottom: 5rem;
+    }
+
+    .footer-above .footer-info {
+        gap: 2rem;
+        border-bottom: 0.3rem solid #fff;
+        padding-bottom: 3rem;
     }
 
     .footer-above .footer-contact {
@@ -242,6 +249,8 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 3rem;
+        padding-bottom: 3rem;
+        border-bottom: 0.3rem solid #fff;
     }
 
     .footer-contact h3 {
@@ -270,8 +279,7 @@
 
     .footer-menu .menu-item-list {
         flex-direction: column;
-        gap: 4rem;
-        align-items: center;
+        gap: 2rem;
     }
 
     .footer-container .footer-below {
