@@ -58,57 +58,6 @@
     display: block;
 }
 
-/* responsive section banner */
-@media screen and (max-width: 768px) {
-    .banner-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin-bottom: 10rem;
-    }
-
-    .banner-container .content {
-        grid-row: 2;
-    }
-
-    .banner-container .banner-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 9rem 5rem 0;
-    }
-
-    .banner-image img {
-        grid-row: 1;
-        display: flex;
-        justify-content: center;
-        width: 400px;
-    }
-
-    .banner-container .content {
-        gap: 6rem;
-        padding: 4rem 6rem 0;
-    }
-
-    .content h1 {
-        font-size: 4.5rem;
-        text-align: center;
-    }
-
-    .content h1 span {
-        font-size: 4.5rem;
-    }
-
-    .content p {
-        font-size: 2.1rem;
-        font-weight: 400;
-    }
-
-
-    .content a {
-        display: none;
-    }
-}
-
 /* section plants css */
 .plants-container {
     margin-bottom: 10rem;
@@ -128,13 +77,6 @@
     margin-bottom: var(--f-gap);
     width: calc((100% / var(--f-columns) - var(--f-gap)));
     aspect-ratio: 3/4;
-}
-
-@media screen and (max-width: 768px) {
-    .plants-group {
-        --f-columns: 3;
-        --f-gap: 20px;
-    }
 }
 
 .plants-group .plants-image {
@@ -159,7 +101,7 @@
     transition: all 0.25s linear;
 }
 
-.plants-item button {
+.plants-item .best-selling {
     position: absolute;
     bottom: -100%;
     transition: all 0.25s linear;
@@ -174,7 +116,7 @@
     font-weight: 400;
 }
 
-.plants-item button {
+.plants-item .best-selling {
     position: absolute;
     bottom: -100%;
     transition: all 0.25s linear;
@@ -228,8 +170,13 @@
     text-align: right;
 }
 
-.plants-item:hover button {
+.plants-item:hover .best-selling {
     bottom: 1rem;
+}
+
+.plants-item:hover .plants-image img {
+    transform: scale(1.1) translateY(-2vw);
+    transition: all 0.2s ease-in-out;
 }
 
 .plants-item:hover .plants-item__overlay {
@@ -370,8 +317,114 @@
     font-weight: 400;
 }
 
+@media screen and (min-width: 769px) and (max-width:1152px) {
+
+    /* section plants */
+    .plants-group {
+        --f-columns: 3;
+        --f-gap: 2.4rem;
+    }
+
+    .plants-item .text-group {
+        right: 1.5rem;
+        padding: 2rem 0;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .banner-container {
         padding-top: 0;
+    }
+
+    /* section plants */
+    .plants-group {
+        --f-columns: 2;
+        --f-gap: 2.4rem;
+    }
+
+    .plants-item .text-group {
+        right: 1.5rem;
+        padding: 2rem 0;
+    }
+
+    .text-group .name {
+        font-size: 2.8vw;
+    }
+
+    .text-group .price {
+        font-size: 2.8vw;
+    }
+
+    .plants-group>* {
+        aspect-ratio: 4/5;
+    }
+
+    .plants-item:hover .text-group {
+        padding-bottom: 8.5vw;
+    }
+
+
+    .plants-item:hover .text-group .name {
+        font-size: 2.8vw;
+        color: #fff;
+    }
+
+    .plants-item:hover .text-group .price {
+        font-size: 2.8vw;
+        color: #fff;
+        text-align: right;
+    }
+
+    .plants-item:hover .best-selling {
+        font-size: 2vw;
+    }
+
+
+    /* section banner */
+    .banner-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 10rem;
+    }
+
+    .banner-container .content {
+        grid-row: 2;
+    }
+
+    .banner-container .banner-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 9rem 5rem 0;
+    }
+
+    .banner-image img {
+        grid-row: 1;
+        display: flex;
+        justify-content: center;
+        width: 400px;
+    }
+
+    .banner-container .content {
+        gap: 6rem;
+        padding: 4rem 6rem 0;
+    }
+
+    .content h1 {
+        font-size: 4.5rem;
+        text-align: center;
+    }
+
+    .content h1 span {
+        font-size: 4.5rem;
+    }
+
+    .content p {
+        font-size: 2.1rem;
+        font-weight: 400;
+    }
+
+    .content a {
+        display: none;
     }
 }
