@@ -1,0 +1,94 @@
+.develop-container {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.develop-container .section-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+}
+
+.section-left a {
+    width: fit-content;
+    display: inline-flex;
+    height: 7.3rem;
+    padding: 2rem 4.3rem;
+    gap: 1rem;
+    border-radius: 5rem;
+    background-color: var(--button-color);
+    color: #fff;
+    font-size: 2.7rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.section-left a:hover {
+    background: linear-gradient(210deg, #789D5C 0%, #297C35 100%);
+}
+
+.section-left a img {
+    display: none;
+}
+
+.section-left a:hover img {
+    display: block;
+}
+
+.section-left h2 {
+    font-family: "Days One", sans-serif;
+    font-size: 7rem;
+}
+
+.section-left h2 span {
+    font-family: "Days One", sans-serif;
+    font-size: 7rem;
+    line-height: 10rem;
+}
+
+.section-left h2 span:nth-child(1) {
+    color: #c0cfac;
+}
+
+.section-left h2 span:nth-child(2) {
+    background: linear-gradient(90deg, #c9dea7 0%, #297c35 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-left h2 span:nth-child(3) {
+    color: #8DAC6F;
+}
+
+.section-left h2 span:nth-child(4) {
+    background: linear-gradient(90deg, #ffbdba 0%, #ff527d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.lotus-image {
+    object-fit: cover;
+    object-position: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .develop-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+    }
+
+    .lotus-image {
+        margin-top: 6rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .develop-container .section-left {
+        gap: 6rem;
+    }
+
+    .section-left h2 {
+        font-size: 10vw;
+    }
+}
