@@ -320,7 +320,7 @@
     font-weight: 400;
 }
 
-@media screen and (min-width: 769px) and (max-width:1152px) {
+@media screen and (max-width:1152px) {
 
     /* section plants */
     .plants-group {
@@ -495,5 +495,79 @@
 
     .user-info .author {
         font-size: 2.8vw;
+    }
+}
+
+@media screen and (max-width: 534px) {
+    .banner-container {
+        margin-bottom: 3rem;
+    }
+
+    .plants-container{
+        margin-bottom: 3rem;
+    }
+
+    .banner-container .banner-image {
+        padding: 5rem 3rem 0;
+    }
+
+    .banner-container .content {
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .content h1 br {
+        display: none;
+    }
+
+    .plants-item:hover .best-selling {
+        font-size: 1.5vw;
+        padding: 0.3rem 0.5rem;
+        bottom: 0.5rem;
+    }
+
+    .plants-item:hover .text-group {
+        padding-bottom: 5.5vw
+    }
+
+    .plants-item:hover .text-group .name {
+        font-size: 2vw;
+    }
+
+    .text-group .name {
+        font-size: 2vw;
+    }
+
+    .plants-item .text-group {
+        padding: 1rem;
+        right: 0.5rem;
+    }
+
+    .text-group .icon-custom {
+        font-size: 3vw;
+    }
+
+    .plants-item .plants-item__overlay {
+        border-radius: 1rem;
+    }
+    .content p{
+        font-size: 4vw;
+    }
+
+    .content h1{
+        font-size: 8vw;
+    }
+
+    .content h1 span{
+        font-size: 8vw;
+    }
+
+    .feedbacks-left .heading-custom{
+        padding-top: 1rem;
+    }
+
+    .feedbacks-left .feedbacks-list{
+        padding: 2rem 0;
+        gap: 0.5rem;
     }
 }

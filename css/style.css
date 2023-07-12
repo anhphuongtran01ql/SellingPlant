@@ -169,8 +169,13 @@ footer {
 }
 
 @media screen and (max-width:576px) {
+    .container {
+        padding: 0 2rem;
+    }
+
     .section-title-wrapper {
         padding: 1.5rem 2rem;
+        border-radius: 1rem;
     }
 
     .section-title {
@@ -180,6 +185,8 @@ footer {
     .section-title span {
         font-size: 2rem;
     }
+
+
 }
 
 @media screen and (max-width: 354px) {

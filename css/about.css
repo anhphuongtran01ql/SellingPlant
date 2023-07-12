@@ -132,3 +132,27 @@
         width: 27%;
     }
 }
+
+@media screen and (max-width: 534px) {
+    .about-us {
+        padding: 5rem 0 1rem;
+    }
+
+    .about-container {
+        width: 90%;
+    }
+
+    .about-text-group .content-wrapper {
+        padding-block: 0;
+        padding-top: 2rem;
+        padding-inline: 10%;
+    }
+
+    .content-wrapper p {
+        font-size: 3vw;
+    }
+
+    main {
+        padding: 5rem 0 2rem;
+    }
+}
