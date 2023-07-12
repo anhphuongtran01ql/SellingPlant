@@ -2,15 +2,15 @@
 .banner-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 10rem;
+    margin-bottom: 8.5rem;
     padding-top: 9rem;
 }
 
 .banner-container .content {
     display: flex;
     flex-direction: column;
-    gap: 8rem;
-    padding: 2rem;
+    gap: 6.5rem;
+    padding-top: 1rem;
 }
 
 .content h1 {
