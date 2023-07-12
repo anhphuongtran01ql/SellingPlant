@@ -97,7 +97,7 @@
 .input-group input,
 .contact-form-group textarea {
     padding: 1.2rem 1rem 1.2rem 2rem;
-    color: var(--input-text-color);
+    color: var(--button-color);
     font-family: "Days One", sans-serif;
     font-size: 2rem;
     font-weight: 400;
@@ -303,6 +303,9 @@
     .method-info p {
         font-size: 1.5rem;
     }
+
+    /* section feedbacks */
+
 }
 
 @media screen and (max-width: 534px) {
@@ -336,7 +339,7 @@
         width: 100%;
     }
 
-    .method-info{
+    .method-info {
         gap: 1rem;
     }
 

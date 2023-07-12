@@ -239,7 +239,7 @@
 
 @media screen and (max-width: 1152px) {
     .product-banner {
-        padding-top: 8rem;
+        padding-top: 5rem;
     }
 
     .product-banner-container {
@@ -317,10 +317,6 @@
 
     .product-banner-container {
         grid-template-columns: unset;
-        margin-bottom: 10rem;
-    }
-
-    .product-banner-container {
         margin-bottom: 5rem;
     }
 

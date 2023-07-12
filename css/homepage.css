@@ -212,7 +212,7 @@
     grid-gap: 2.4rem;
 }
 
-.feedbacks .feedbacks-left {
+.feedbacks-container .feedbacks-left {
     position: relative;
     grid-column: 1/span 2;
     text-align: center;
@@ -332,6 +332,23 @@
         right: 1.5rem;
         padding: 2rem 0;
     }
+
+    /* section feedbacks */
+    .feedbacks-left .feedbacks-list {
+        width: 50vw;
+    }
+
+    .user-info .star-rating i {
+        font-size: 4vw;
+    }
+
+    .user-info .details {
+        font-size: 2vw;
+    }
+
+    .user-info .author {
+        font-size: 2.8vw;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -366,7 +383,6 @@
         padding-bottom: 8.5vw;
     }
 
-
     .plants-item:hover .text-group .name {
         font-size: 2.8vw;
         color: #fff;
@@ -381,7 +397,6 @@
     .plants-item:hover .best-selling {
         font-size: 2vw;
     }
-
 
     /* section banner */
     .banner-container {
@@ -429,5 +444,56 @@
 
     .content a {
         display: none;
+    }
+
+    /* section feedbacks */
+    .feedbacks-container .feedbacks-right {
+        display: none;
+    }
+
+    .feedbacks-container .feedbacks-left {
+        grid-column: 1/span 3;
+        gap: unset;
+        justify-content: space-between;
+    }
+
+    .feedbacks-left .feedbacks-list {
+        width: 70vw;
+        gap: 3rem;
+        padding: 5rem 0;
+    }
+
+
+    .feedbacks-list .owl-nav.disabled+.owl-dots .owl-dot span {
+        width: 3vw;
+        height: 3vw;
+        margin: 1vw 2vw;
+    }
+
+    .feedback-item .user-avatar {
+        padding-right: 5vw;
+    }
+
+    .feedback-item .user-avatar img {
+        width: 20vw;
+    }
+
+    .feedback-item .user-info {
+        border-radius: 5%;
+        margin-top: -10vw;
+        padding: 8vw 6vw;
+        gap: 2rem;
+    }
+
+    .user-info .star-rating i {
+        font-size: 5vw;
+    }
+
+    .user-info .details {
+        font-size: 2.5vw;
+    }
+
+    .user-info .author {
+        font-size: 2.8vw;
     }
 }
