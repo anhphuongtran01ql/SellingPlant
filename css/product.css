@@ -319,6 +319,10 @@
     .banner-right .banner-right-image {
         height: calc(100% + 1.5rem);
     }
+
+    .plants-item .plants-btn {
+        padding-right: 0;
+    }
 }
 
 @media screen and (max-width: 767px) {

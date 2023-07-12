@@ -330,6 +330,10 @@
         font-size: 3.3vw;
     }
 
+    .title-wrapper .text-green {
+        font-size: 3.3vw;
+    }
+
     .news-item-right .news-title {
         font-size: 1.5vw;
     }
@@ -384,6 +388,10 @@
     }
 
     .title-area .title-wrapper {
+        font-size: 3rem;
+    }
+
+    .title-wrapper .text-green {
         font-size: 3rem;
     }
 
@@ -451,6 +459,49 @@
 
 @media only screen and (max-width: 650px) {
     .section-right .image-section {
+        display: none;
+    }
+
+    .title-area .title-wrapper {
+        font-size: 6vw;
+    }
+
+    .title-wrapper .text-green {
+        font-size: 6vw;
+    }
+
+    .news .section-right {
+        flex-direction: column;
+    }
+
+    .news-item-right .news-title {
+        font-size: 3vw;
+    }
+
+    .news-item-right .news-author {
+        font-size: 2vw;
+    }
+
+    .news-title-wrapper a {
+        font-size: 4vw;
+    }
+
+    .event-name p{
+        font-size: 3vw;
+    }
+
+    .news-table tr th{
+        font-size: 3vw
+    }
+
+    .news-table th:not(:first-child){
+        padding-left: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 534px) {
+    .news-table tr:nth-child(n+4) {
         display: none;
     }
 }
