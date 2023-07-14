@@ -53,7 +53,7 @@ const activateNextImage = () => {
       images[activeIndex].classList.remove("active");
       images[activeIndex].style.display = "none";
       activeIndex++;
-      if (activeIndex >= images.length) {
+      if (images && activeIndex >= images.length) {
         activeIndex = 0;
       }
       images[activeIndex].classList.add("active");
@@ -62,7 +62,7 @@ const activateNextImage = () => {
       images[activeIndex].classList.add("active");
       images[activeIndex].style.display = "block";
     }
-    setInterval(activateNextImage, 3000);
+    setTimeout(activateNextImage, 3000);
   }
 };
 
